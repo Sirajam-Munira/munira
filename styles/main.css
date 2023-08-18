@@ -68,19 +68,32 @@ body {
     text-align:center;
 }
 
-.dropdown-menu {
-    max-height: 200px;
+/* .dropdown-menu {
+    max-height: 100px;
     overflow-y: auto;
 }
 
+@media (min-height: 680px) {
+    .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+        display: block;
+    }
+} */
+
+/* Scrollable dropdown menu for screens with height above 680px */
+@media (max-height: 680px) {
+    .dropdown-menu {
+        max-height: 100px;
+        overflow-y: auto;
+    }
+}
+
+/* Show dropdown on hover for larger screens */
 @media (min-width: 768px) {
     .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
         display: block;
     }
-    .navbar-collapse {
-        overflow-y: auto;
-    }
 }
+
 
 .column {
     float: left;
