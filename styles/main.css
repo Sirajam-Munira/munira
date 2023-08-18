@@ -68,6 +68,17 @@ body {
     text-align:center;
 }
 
+.dropdown-menu {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+/* @media (min-width: 768px) {
+    .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+        display: block;
+    }
+} */
+
 .column {
     float: left;
     width: 50%;
