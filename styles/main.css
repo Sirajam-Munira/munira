@@ -73,11 +73,11 @@ body {
     overflow-y: auto;
 }
 
-/* @media (min-width: 768px) {
+@media (min-width: 768px) {
     .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
         display: block;
     }
-} */
+}
 
 .column {
     float: left;
