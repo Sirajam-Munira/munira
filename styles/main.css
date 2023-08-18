@@ -13,12 +13,6 @@
     --mainBorderColor-dark: #2b3031;
     --mainBgColor-dark: #131415;
 
-    /* --mainTextColor:var(--mainTextColor-dark);
-    --secondaryTextColor:var(--secondaryTextColor-dark);
-    --mainLinkColor:var(--mainLinkColor-dark);
-    --mainBorderColor:var(--mainBorderColor-dark);
-    --mainBgColor:var(--mainBgColor-dark); */
-
     --mainTextColor: var(--mainTextColor-light);
     --secondaryTextColor: (--secondaryTextColor-light);
     --mainLinkColor: var(--mainLinkColor-light);
@@ -68,18 +62,6 @@ body {
     text-align:center;
 }
 
-/* .dropdown-menu {
-    max-height: 100px;
-    overflow-y: auto;
-}
-
-@media (min-height: 680px) {
-    .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
-        display: block;
-    }
-} */
-
-/* Scrollable dropdown menu for screens with height above 680px */
 @media (max-height: 680px) {
     .dropdown-menu {
         max-height: 100px;
@@ -87,27 +69,22 @@ body {
     }
 }
 
-/* Show dropdown on hover for larger screens */
 @media (min-width: 768px) {
     .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
         display: block;
     }
 }
 
-
 .column {
     float: left;
     width: 50%;
     padding: 10px;
 }
-
-
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
-
 @media screen and (max-width: 600px) {
     .column {
         width: 100%;
@@ -170,30 +147,6 @@ a {
     color: var(--mainTextColor);
 }
 
-#socials--list {
-    display: flex;
-    justify-content: space-between;
-    column-gap: 1em;
-    flex-wrap: wrap;
-}
-
-#socials--list a {
-    font-weight: 300;
-    color: var(--secondaryTextColor);
-    font-size: 0.9em;
-    transition: 0.3s;
-}
-
-#socials--list a:hover {
-    font-weight: 100;
-    color: var(--mainLinkColor);
-    font-size: 0.9em;
-}
-
-#qualifications--list {
-    list-style: none;
-}
-
 #wrapper--techstack__items {
     display: flex;
     flex-wrap: wrap;
@@ -212,17 +165,6 @@ a {
     padding-top: 1em;
     padding-bottom: 1em;
     border-top: 1px solid var(--mainBorderColor);
-}
-
-.card--project a {
-    color: var(--mainTextColor);
-
-    transition: 0.3s;
-}
-
-.card--project a:hover {
-    color: rgb(30, 190, 214);
-
 }
 
 .card--work-history {
@@ -268,5 +210,5 @@ a {
 
 #experience, #education, #skill, #academicProjects, #programming, #scholarship, 
 #research, #affiliation, #extra {
-    padding-top: 80px; /* Adjust this value as needed */
+    padding-top: 80px;
 }
