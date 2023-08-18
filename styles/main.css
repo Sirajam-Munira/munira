@@ -77,6 +77,9 @@ body {
     .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
         display: block;
     }
+    .navbar-collapse {
+        overflow-y: auto;
+    }
 }
 
 .column {
